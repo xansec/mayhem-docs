@@ -1,0 +1,64 @@
+---
+title: 始め方
+description: 単純な Mayhem の紹介.
+i18nReady: false
+tableOfContents: false
+editUrl: false
+next: false
+hero:
+  title: Mayhem 資料
+  tagline: Mayhem を使用してアプリを保護するのに役立つガイド、リソース、リファレンスなど。
+  actions:
+    - text: 始めよう！
+      icon: rocket
+      link: /installation/
+      variant: primary
+    - text: メイヘムのフィーチャーを学ぼう！
+      icon: right-arrow
+      link: /en/concepts/why-mayhem/
+  facepile:
+    tagline: Mayhem で駆動され
+    linkText: 参加しませんか
+    link: /en/contribute/
+---
+
+import { CardGrid } from '@astrojs/starlight/components'
+import Card from '~/components/Landing/Card.astro'
+import ListCard from '~/components/Landing/ListCard.astro'
+import SplitCard from '~/components/Landing/SplitCard.astro'
+import Discord from '~/components/Landing/Discord.astro'
+
+<CardGrid>
+
+  <SplitCard title="ガイド付きツアーに参加する" icon="rocket">
+    入門の Build a Calculator を完了して、次の基本を学びましょう。
+    CICD に統合された Mayhem を使用してアプリケーションをセットアップします。
+  </SplitCard>
+
+
+  <Card title="Mayhem について学ぶ" icon="star">
+    [メイヘム、ファジング、動的分析の仕組み](/en/concepts/how-mayhem-works)
+    について学び、コードのセキュリティと信頼性を向上させてください。
+  </Card>
+
+
+  <Card title="Mayhem をインストールします" icon="laptop">
+    [インストール ガイド](/en/installation) には、
+     Mayhem CLI と Docker などの依存関係。
+  </Card>
+
+  <ListCard title="学" icon="open-book">
+    - メイン．フィーチャー
+    - アーキテクチャ
+    - コンポネント
+    - Mayhemfiles
+  </ListCard>
+
+  <ListCard title="例" icon="puzzle">
+    - lighttpd
+    - ntp
+    - など
+  </ListCard>
+</CardGrid>
+
+<Discord title="質問がありますか、それとも参加したいですか?" cta="Discordに参加してください"/>
